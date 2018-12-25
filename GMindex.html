@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国美电商平台</title>
+    <meta name="descript" content="国美(Gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台.全球品牌电视、洗衣机、电脑、手机、数码、空调电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务.">
+    <meta name="Keyworlds" content="国美,国美在线,国美电器,国美官方旗舰店,国美电器网上商城,电视,洗衣机,电脑,手机,数码,空调,电脑配件,生活电器">
+    <style>
+        /*全体样式*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,li{
+            list-style: none;
+            display: inline-block;
+        }
+        /*首页顶部*/
+        .top{
+            height: 80px;
+            background-color: rgb(223,91,19);
+        }
+        /*首页广告行*/
+        .top-ad{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        /*首页导航标签*/
+        .nav-title{
+            height: 31px;
+            background-color: #F8F8F8;
+        }
+        /*首页导航居中块*/
+        .nav-center{
+            width: 1200px;
+            height: 100%;
+                /*div水平居中*/
+            margin: 0 auto;
+        }
+        .nav-center a{
+            color: #888888;
+        }
+        /*首页导航居中模块左侧*/
+        .nav-center-left{
+                /*文字垂直居中*/
+            vertical-align: middle;
+            float: left;
+        }
+        .nav-center-left span{
+            margin-left: 10px;
+        }
+        /*文字特殊颜色*/
+        #nav-center-left-sp a{
+            color: red;
+        }
+        /*首页导航居中模块右侧*/
+        .nav-center-right{
+            float: right;
+            vertical-align: middle;
+        }
+        .nav-center-right span{
+            margin-right: 10px;
+        }
+        /*搜索局域*/
+        .seek{
+            height: 120px;
+            /*background-color: aqua;*/
+
+        }
+        .seek-center{
+            height: 120px;
+            width: 1200px;
+            margin: 0 auto;
+            line-height: 120px;
+        }
+        /*图标*/
+        .logo img{
+            width: 170px;
+            height: 76px;
+            vertical-align: middle;
+            margin-top: 22px;
+            float: left;
+        }
+        /*中间搜索框外框*/
+        /*.sekk-inp-ceter-air{*/
+            /*width: 500px;*/
+            /*height: 52px;*/
+            /*position: relative;*/
+        /*}*/
+        /*中间搜索框*/
+        .seek-inp-center{
+            width: 500px;
+            height: 60px;
+            margin-top: 36px;
+            margin-left: 274px;
+            /*background-color: chartreuse;*/
+            float: left;
+
+            /*position: relative;*/
+        }
+        /*中间搜索框上部*/
+        .seek-inp-center-tree{
+            width: 500px;
+            height: 34px;
+            /*border: 1px solid #DD00A7;*/
+            /*行高问题导致行内元素溢出*/
+            line-height: 0px;
+            /*position: absolute;*/
+        }
+        /*搜索下来单*/
+        .seek-inp-center-tree #select04{
+            width: 63px;
+            height: 34px;
+            /*绝对定位*/
+            /*position: absolute;*/
+            background-color: #fff;
+            color: #888888;
+            border: 1px solid #DD00A7;
+        }
+        /*搜索输入框*/
+        #inp01{
+            width: 340px;
+            height: 32px;
+            border: 1px solid #DD00A7;
+            /*position: absolute;*/
+            /*float: left;*/
+        }
+        #inp02{
+            width: 63px;
+            height: 34px;
+            border: 1px solid #DD00A7;
+        }
+        /*搜索文本标签*/
+        .text-title{
+            height: 18px;
+            font-size: 12px;
+            /*background-color: #DD00A7;*/
+            line-height: 16px;
+        }
+        .text-title a{
+            margin-left: 6px;
+        }
+        /*中间区域购物车*/
+        .seek-right{
+            width: 140px;
+            height: 40px;
+            background-color: #DD00A7;
+            position: absolute;
+            margin-left: 1000px;
+            margin-top: 40px;
+            line-height: 40px;
+        }
+        .seek-right a{
+            color: white;
+            margin-left: 20px;
+
+        }
+
+        /*主页主体区域*/
+        .main{
+            width: 100%;
+            height: 450px;
+            background-color: #5A68F8;
+        }
+        /*主体区居中div*/
+        .main-center{
+            width: 1200px;
+            height: 450px;
+            background-color: #F8F8F8;
+            margin: 0 auto;
+        }
+        /*主体区居中头部*/
+        .main-center-top{
+            width: 100%;
+            height: 40px;
+        }
+        /*主体区居中头部左侧*/
+        .main-center-top-left{
+            width: 200px;
+            height: 40px;
+            background-color: #f1f1f1;
+            float: left;
+        }
+        /*主体区居中头部左侧文字*/
+        .main-center-top-left p{
+            font-size: 16px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        /*主体区居中头部居中区域*/
+        .main-center-top-center{
+            width: 800px;
+            height: 40px;
+            background-color:#f8f8f8 ;
+            float: left;
+        }
+        /*主体区居中头部居中文字*/
+        .main-center-top-center p{
+            /*块级元素转换为行内元素*/
+            display: inline-block;
+            /*text-align: center;*/
+            padding-top: 12px;
+            margin-left: 20px;
+        }
+        /*主体区居中头部右侧*/
+        .main-center-top-right{
+            width: 170px;
+            height: 40px;
+            float: left;
+        }
+        /*主体区居中主体左侧*/
+        .main-center-body-left{
+            width: 200px;
+            height: 410px;
+            float: left;
+        }
+        /*主体区居中主体左侧P标签*/
+        .main-center-body-left p{
+            margin-top: 6px;
+        }
+        /*主体区居中主体轮播图*/
+        .main-center-body-lunbo{
+            width: 750px;
+            height: 410px;
+            float: left;
+        }
+        .main-center-body-lunbo img{
+            width: 750px;
+            height: 410px;
+        }
+        /*主体区居中主体右侧*/
+        .main-center-body-right{
+            width: 250px;
+            height: 430px;
+            float: left;
+        }
+        /*主体区居中主体右侧上部-*/
+        .main-center-body-right-top{
+            width: 220px;
+            height: 36px;
+            margin: 0 auto;
+        }
+        .main-center-body-right-top p{
+            display: inline-block;
+        }
+        .main-center-body-right-top #p1{
+            float: left;
+        }
+        .main-center-body-right-top #p2{
+            float: right;
+            font-size: 12px;
+        }
+        /*主体区居中主体右侧列表*/
+        .main-center-body-right-li{
+            width: 220px;
+            margin:0 auto;
+            font-size: 14px;
+        }
+        #li03 a{
+            font-size: 12px;
+        }
+        /*主体区居中主体右侧中间*/
+        .main-center-body-right-center{
+            width: 250px;
+            height: 167px;
+            background-color: #DD00A7;
+        }
+        /*主体区居中主体右侧图片*/
+        .main-center-body-right-img img{
+            width: 250px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+    <!--首页顶部-->
+    <div class="top">
+        <!--首页广告行-->
+        <div class="top-ad">
+            <img src="imgs/国美广告.jpg"/>
+        </div>
+    </div>
+
+    <!--首页导航标签-->
+    <div class="nav-title">
+        <!--首页导航居中块-->
+        <div class="nav-center">
+            <!--首页导航居中块左侧-->
+            <span class="nav-center-left">
+                <span><a href="">国美会员</a></span>
+                <span><a href="">登录</a></span>
+                <span id="nav-center-left-sp"><a href="">注册有礼</a></span>
+            </span>
+            <!--首页导航居中右侧-->
+            <span class="nav-center-right">
+                <span><a href="">我的订单</a></span>
+                <span><a href="">我的国美</a></span>
+                <span><a href="">企业采购</a></span>
+                <span><a href="">服务中心</a></span>
+                <span><a href="">网站导航</a></span>
+                <span><a href="">手机国美</a></span>
+            </span>
+        </div>
+    </div>
+
+    <!--首页搜索区域-->
+    <div class="seek">
+        <!--搜索区域居中-->
+        <div class="seek-center">
+            <!--国美图标-->
+            <div class="logo">
+                <img src="imgs/logo01.jpg"/>
+            </div>
+                <!--中间搜索框-->
+            <div class="seek-inp-center">
+                    <!--搜索框上部-->
+                <div class="seek-inp-center-tree">
+                        <!--下拉菜单-->
+                    <select name="" id="select04">
+                        <option value="商品">商品</option>
+                        <option value="店铺">店铺</option>
+                        <option value="话题">话题</option>
+                        <option value="圈子">圈子</option>
+                    </select>
+                        <!--搜索输入框-->
+                    <input type="text" value="空调" id="inp01">
+                        <!--按钮-->
+                    <input type="button" value="搜索" id="inp02">
+                </div>
+                    <!--搜索文本标签-->
+                <div class="text-title">
+                    <span><a href="">32周年庆</a></span>
+                    <span><a href="">优惠购金</a></span>
+                    <span><a href="">空调减600</a></span>
+                    <span><a href="">低至9.9</a></span>
+                    <span><a href="">最高减2000</a></span>
+                    <span><a href="">品质轮胎</a></span>
+                    <span><a href="">小米平板</a></span>
+                    <span><a href="">晒单赠包</a></span>
+                </div>
+            </div>
+            <!--中间搜索区域右侧-->
+            <div class="seek-right">
+                <!--购物车图标-->
+                <a href="#">我的购物车</a>
+            </div>
+        </div>
+    </div>
+
+<!--主页主体区-->
+    <div class="main">
+        <!--主体区居中div-->
+        <div class="main-center">
+            <!--主体区居中上部-->
+            <div class="main-center-top">
+                <!--全品类列表头--左侧-->
+                <div class="main-center-top-left">
+                    <p>全部商品分类</p>
+                </div>
+                <!--主体居中上部中间列表-->
+                <div class="main-center-top-center">
+                    <p>圈子</p>
+                    <p>真划算</p>
+                    <p>服装城</p>
+                    <p>超市</p>
+                    <p>电器城</p>
+                    <p>汽车</p>
+                    <p>家居</p>
+                    <p>家装</p>
+                    <p>智能管家</p>
+                    <p>金融</p>
+                </div>
+                <!--主体区中上部右侧-->
+                <div class="main-center-top-right">
+                    <img src="imgs/lun01.png"/>
+                </div>
+            </div>
+            <!--主体区居中主体-左侧-->
+            <div class="main-center-body-left">
+                <p>
+                    <li><a href="">手机</a></li>
+                    <li><a href="">充值</a></li>
+                    <li><a href="">相机</a></li>
+                    <li><a href="">智能数码</a></li>
+                </p>
+                <p>
+                    <li><a href="">电脑</a></li>
+                    <li><a href="">办公配件</a></li>
+                </p>
+                <p>
+                    <li><a href="">电视</a></li>
+                    <li><a href="">影音</a></li>
+                    <li><a href="">智能</a></li>
+                </p>
+                <p>
+                    <li><a href="">空调</a></li>
+                    <li><a href="">冰箱</a></li>
+                    <li><a href="">洗衣机</a></li>
+                </p>
+                <p>
+                    <li><a href="">厨房卫浴</a></li>
+                    <li><a href="">生活电器</a></li>
+                    <li><a href="">环境</a></li>
+                </p>
+                <p>
+                    <li><a href="">家具</a></li>
+                    <li><a href="">建材</a></li>
+                    <li><a href="">家装服务</a></li>
+                </p>
+                <p>
+                    <li><a href="">家纺</a></li>
+                    <li><a href="">家居</a></li>
+                    <li><a href="">家居家装</a></li>
+                </p>
+                <p>
+                    <li><a href="">食品酒水</a></li>
+                    <li><a href="">母婴玩具</a></li>
+                </p>
+                <p>
+                    <li><a href="">营养保健</a></li>
+                    <li><a href="">美妆个护</a></li>
+                </p>
+                <p>
+                    <li><a href="">服饰鞋帽</a></li>
+                    <li><a href="">箱包奢品</a></li>
+                </p>
+                <p>
+                    <li><a href="">运动户外</a></li>
+                    <li><a href="">钟表首饰</a></li>
+                </p>
+                <p>
+                    <li><a href="">汽车整车</a></li>
+                    <li><a href="">汽车用品</a></li>
+                </p>
+                <p>
+                   <li><a href="">文化艺术</a></li>
+                    <li><a href="">游戏</a></li>
+                </p>
+                <p>
+                    <li><a href="">国美金融</a></li>
+                </p>
+                <p>
+                    <li><a href="">国美管家</a></li>
+                </p>
+            </div>
+            <!--主体区居中主体轮播图-->
+            <div class="main-center-body-lunbo">
+                <img src="imgs/ings03.jpg"/>
+            </div>
+            <!--主体区居中主体右侧-->
+            <div class="main-center-body-right">
+                <!--主体区居中主体右侧上部-->
+                <div class="main-center-body-right-top">
+                    <p id="p1">快讯</p>
+                    <p id="p2"><a href="">更多</a></p>
+                </div>
+                <!--主体区居中主体右侧列表-->
+                <div class="main-center-body-right-li">
+                    <ul>
+                        <li>特惠</li>
+                        <li><a href="">全画幅单反立省千元</a></li>
+                    </ul>
+                    <ul>
+                        <li>特惠</li>
+                        <li><a href="">生活家电&nbsp;好货低至5折</a></li>
+                    </ul>
+                    <ul>
+                        <li>特惠</li>
+                        <li id="li03"><a href="">长虹55英寸AI人工智能电视2199</a></li>
+                    </ul>
+                    <ul>
+                        <li>特惠</li>
+                        <li><a href="">超市百货庆典&nbsp;部分买3免1</a></li>
+                    </ul>
+                </div>
+
+                <!--主体区居中主体右侧中部-->
+                <div class="main-center-body-right-center">
+
+                </div>
+                <!--主体区居中主体右侧下册图片-->
+                <div class="main-center-body-right-img">
+                    <img src="imgs/ings03.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
