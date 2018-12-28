@@ -1,0 +1,320 @@
+/*全局样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F5F5F5;
+}
+ul,li{
+    list-style: none;
+    display: inline-block;
+}
+/*首页导航标签*/
+.nav-title{
+    height: 31px;
+    background-color: #F8F8F8;
+}
+/*首页导航居中块*/
+.nav-center{
+    width: 1200px;
+    height: 100%;
+    /*div水平居中*/
+    margin: 0 auto;
+}
+.nav-center a{
+    color: #888888;
+}
+/*首页导航居中模块左侧*/
+.nav-center-left{
+    /*文字垂直居中*/
+    vertical-align: middle;
+    float: left;
+}
+.nav-center-left span{
+    margin-left: 10px;
+}
+/*文字特殊颜色*/
+#nav-center-left-sp a{
+    color: red;
+}
+/*首页导航居中模块右侧*/
+.nav-center-right{
+    float: right;
+    vertical-align: middle;
+}
+.nav-center-right span{
+    margin-right: 10px;
+}
+/*首页导航栏*/
+.nav{
+    width: 100%;
+    height: 76px;
+    background-color:#FF5757 ;
+}
+/*导航栏居中块*/
+.nav-center{
+    width: 1200px;
+    height: 76px;
+    margin: auto;
+
+}
+/*居中文字*/
+.nav-center .p01{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+}
+#p02{
+    width: 560px;
+    height: 100%;display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+}
+.p02{
+
+    font-size: 18px;
+    color: white;
+}
+/*弹性盒子居右*/
+.tan{
+    width: 440px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*导航栏-输入框*/
+#inp01{
+    width: 150px;
+    height: 20px;
+}
+/*导航栏-查找图标*/
+.img-inp{
+    width: 10px;
+    height: 20px;
+    background-color: white;
+}
+/*导航栏-购物车按钮*/
+.btn{
+    width: 87px;
+    height: 30px;
+    margin-left: 4px;
+    background-color: white;
+}
+a{
+    color: black;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/*居中主体*/
+.main{
+    width: 1200px;
+    height: 600px;
+    /*background-color: #8ac1db;*/
+    /*background-color: #FFFFFF;*/
+    margin: 0 auto;
+    border: 1px solid white;
+}
+/*居中模块-左侧*/
+.main-left{
+    width: 250px;
+    float: left;
+}
+/*左侧-头部*/
+.left-top{
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+}
+/*左侧-头部-头像*/
+.img01{
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    float: left;
+    margin-left: 20px;
+}
+/*左侧-头部-姓名*/
+.hezi01{
+    width: 100px;
+    height: 55px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/*左侧-头部-等级*/
+.grade-01 i{
+    width: 20px;
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    float: left;
+}
+/*左侧-头部-礼盒*/
+/*左侧-头部-礼包*/
+/*左侧-头部进度条*/
+.long-lip{
+    width: 200px;
+    height: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: deeppink;
+}
+.long-lip p{
+    margin-left: 10px;
+}
+.grade-01 p{
+    width: 100px;
+    height: 20px;
+    margin-left: 34px;
+
+}
+/*左侧-中间*/
+.left-center{
+    width: 200px;
+    height: 65px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.left-center p{
+    color: #666666;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: #FFFAF7;
+}
+/*左侧-中下部*/
+.left-center2{
+    width: 170px;
+    height: 48px;
+    position: relative;
+    margin-top: 50px;
+}
+.left-center2 div{
+    width: 100px;
+    color: #666666;
+    font-size: 16px;
+    margin-left: 20px;
+    position: absolute;
+}
+#right-he{
+    width: 10px;
+    height: 10px;
+    background-color: #666666;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+/*左侧-下部*/
+.left-bottom{
+    width: 100%;
+    height: 240px;
+    /*background-color: #5A68F8;*/
+    margin-left: 20px;
+}
+.bottom01{
+    height: 80px;
+    /*background-color: #888888;*/
+    text-align: center;
+    color: #666666;
+    margin-top: 6px;
+
+}
+/*主体主要轮播区*/
+.main-center{
+    width: 768px;
+    height: 600px;
+    float: left;
+}
+/*轮播图片*/
+.main-center img{
+    height: 405px;
+    width: 768px;
+}
+/*商品图片块*/
+.shangpin{
+    width: 384px;
+    height: 270px;
+    float: left;
+
+}
+/*商品图片*/
+.shangpin img{
+    width: 130px;
+    height: 160px;
+    margin-top: 10px;
+    float: left;
+}
+/*商品图片右侧文字区*/
+.shangpin-right{
+    float: left;
+    margin-top: 30px;
+    margin-left: 8px;
+}
+/*主体右侧*/
+.main-right{
+    width: 180px;
+    height: 600px;
+    /*background-color: aqua;*/
+    float: left;
+}
+.sign{
+    background-color: #FFE7E7;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #666666;
+    line-height: 30px;
+}
+/*日期*/
+.data{
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #888888;
+    margin-left: 30px;
+}
+.data01{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.data02{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+}
+.btn01{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    margin-left: 34px;
+}
+.p03{
+    color: #666666;
+    font-size: 12px;
+    margin-left: 34px;
+    margin-top: 8px;
+}
+.air{
+    height: 2px;
+    border-bottom: 1px solid pink;;
+}
+.member{
+    width: 100%;
+    height: 150px;
+}
+.img02{
+    width: 180px;
+    height: 140px;
+}

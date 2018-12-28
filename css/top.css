@@ -1,0 +1,153 @@
+/*全体样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    display: inline-block;
+}
+/*首页顶部*/
+.top{
+    height: 80px;
+    background-color: rgb(223,91,19);
+}
+/*首页广告行*/
+.top-ad{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*首页导航标签*/
+.nav-title{
+    height: 31px;
+    background-color: #F8F8F8;
+}
+/*首页导航居中块*/
+.nav-center{
+    width: 1200px;
+    height: 100%;
+    /*div水平居中*/
+    margin: 0 auto;
+}
+.nav-center a{
+    color: #888888;
+}
+/*首页导航居中模块左侧*/
+.nav-center-left{
+    /*文字垂直居中*/
+    vertical-align: middle;
+    float: left;
+}
+.nav-center-left span{
+    margin-left: 10px;
+}
+/*文字特殊颜色*/
+#nav-center-left-sp a{
+    color: red;
+}
+/*首页导航居中模块右侧*/
+.nav-center-right{
+    float: right;
+    vertical-align: middle;
+}
+.nav-center-right span{
+    margin-right: 10px;
+}
+/*搜索局域*/
+.seek{
+    height: 120px;
+    /*background-color: aqua;*/
+
+}
+.seek-center{
+    height: 120px;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 120px;
+}
+/*图标*/
+.logo img{
+    width: 170px;
+    height: 76px;
+    vertical-align: middle;
+    margin-top: 22px;
+    float: left;
+}
+/*中间搜索框外框*/
+/*.sekk-inp-ceter-air{*/
+/*width: 500px;*/
+/*height: 52px;*/
+/*position: relative;*/
+/*}*/
+/*中间搜索框*/
+.seek-inp-center{
+    width: 500px;
+    height: 60px;
+    margin-top: 36px;
+    margin-left: 274px;
+    /*background-color: chartreuse;*/
+    float: left;
+
+    /*position: relative;*/
+}
+/*中间搜索框上部*/
+.seek-inp-center-tree{
+    width: 500px;
+    height: 34px;
+    /*border: 1px solid #DD00A7;*/
+    /*行高问题导致行内元素溢出*/
+    line-height: 0px;
+    /*position: absolute;*/
+}
+/*搜索下来单*/
+.seek-inp-center-tree #select04{
+    width: 63px;
+    height: 34px;
+    /*绝对定位*/
+    /*position: absolute;*/
+    background-color: #fff;
+    color: #888888;
+    border: 1px solid #DD00A7;
+}
+/*搜索输入框*/
+#inp01{
+    width: 340px;
+    height: 32px;
+    border: 1px solid #DD00A7;
+    /*position: absolute;*/
+    /*float: left;*/
+}
+#inp02{
+    width: 63px;
+    height: 34px;
+    border: 1px solid #DD00A7;
+}
+/*搜索文本标签*/
+.text-title{
+    height: 18px;
+    font-size: 12px;
+    /*background-color: #DD00A7;*/
+    line-height: 16px;
+}
+.text-title a{
+    margin-left: 6px;
+}
+/*中间区域购物车*/
+.seek-right{
+    width: 140px;
+    height: 40px;
+    background-color: #DD00A7;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 40px;
+    line-height: 40px;
+}
+.seek-right a{
+    color: white;
+    margin-left: 20px;
+
+}
