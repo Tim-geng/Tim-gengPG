@@ -4,110 +4,9 @@
     <meta charset="UTF-8">
     <title>注册页面</title>
     <style>
-        /*页面全体样式*/
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul,li{
-            list-style: none;
-            display: inline-block;
-        }
-        /*注册头部*/
-        .top{
-            width: 100%;
-            height: 120px;
-        }
-        /*注册头部-居中块*/
-        .top-center{
-            width: 990px;
-            height: 120px;
-            margin: auto;
-            /*background-color: #5A68F8;*/
-        }
-            /*居中块头部*/
-        .top-top{
-            width: 400px;
-            height: 60px;
-            padding-top: 30px;
-        }
-            /*居中块头部图片*/
-        .top-top img{
-            width: 170px;
-            height: 60px;
-            float: left;
-        }
-            /*居中块文字*/
-        .top-top #p01{
-            font-size: 40px;
-            color: #BCBCBC;
-            display: inline-block;
-            float: left;
-        }
-        /*注册分类块*/
-        .enroll-ct{
-            width: 990px;
-            height: 40px;
-            margin: auto;
-            /*background-color: #5A68F8;*/
-        }
-        /*个人模块*/
-        #person,#company{
-            width: 150px;
-            height: 40px;
-            color: #5e5e5e;
-            background-color:#f3f3f3 ;
-            float: left;
-            font-size: 16px;
-        }
-            /*个人模块实时样式*/
-        #person:hover{
-            color: red;
-            border-top: 2px solid red;
 
-        }
-            /*公司模块实时样式*/
-        #company:hover{
-            color: red;
-            border-top:2px solid red;
-        }
-            /*个人，公布文字样式*/
-        #person p{
-            text-align: center;
-            margin-top: 8px;
-        }
-        #company p{
-            text-align: center;
-            margin-top: 8px;
-        }
-            /*右侧文字模块*/
-        #p02{
-            font-size: 16px;
-            float: right;
-            margin-top:20px ;
-            margin-right: 10px;
-        }
-        /*注册主体*/
-        .enroll-body{
-            width: 100%;
-            height: 740px;
-            background-color: #BCBCBC;
-        }
-        /*注册主体居中块*/
-        .body-center{
-            width: 990px;
-            height: 740px;
-            margin: auto;
-            background-color: #5A68F8;
-        }
-        /*注册表*/
-        .list-text{
-            
-        }
     </style>
+    <link rel="stylesheet" href="css/enroll.css">
 </head>
 <body>
     <!--注册头部-->
@@ -139,10 +38,78 @@
         <!--注册主体居中块-->
         <div class="body-center">
             <!--注册表-->
-            <div class="body-list">
-                <div class="list-text"></div>
-                <input type="text">
+                <!--注册表左侧-->
+            <form action="">
+                <div class="list-text">
+                    <div class="first-list">
+                        <p>用户名：</p>
+                        <input type="text" class="first-list-inp">
+                        <!--<div></div>-->
+                    </div>
+                    <div class="secound-list">
+                        <p>设置密码：</p>
+                        <input type="passworld" class="secound-list-inp">
+
+                    </div>
+                    <div class="air"></div>
+                    <div class="secound-list">
+                        <p>确认密码：</p>
+                        <input type="password" class="secound-list-inp">
+                    </div>
+                    <div class="secound-list">
+                        <p>手机号：</p>
+                        <input type="tel" class="secound-list-inp" style="margin-left: 20px">
+                    </div>
+                    <div class="secound-list">
+                        <p>滑动验证：</p>
+                        <input type="range" class="secound-list-inp range">
+                    </div>
+                    <div class="secound-list">
+                        <p>短信验证：</p>
+                        <input type="text" class="thred-list-inp" style="width: 200px">
+                        <input type="button" value="获取短信验证码">
+                    </div>
+                    <div class="list-ss">
+                        <p>推荐码（选填）：</p>
+                        <input type="text" class="secound-list-inp" value="填写推荐人 推荐码 帮好友赚收入">
+                    </div>
+                    <!--立即注册按钮-->
+                    <button>立即注册</button>
+                </div>
+            </form>
+
+            <!--注册表右侧-->
+            <div id="list-right">
+                <img src="imgs/center01.jpg"/>
             </div>
+        </div>
+    </div>
+    <!--底部版权区-->
+    <div class="footer">
+        <!--第一行-->
+        <ul id="first-ul">
+            <li id="first-li"><a href="#">国美集团</a></li>
+            <li><a href="#">国美管家</a></li>
+            <li><a href="#">关于国美</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">品牌大全</a></li>
+            <li><a href="#">商品专题</a></li>
+            <li><a href="#">商品词</a></li>
+            <li><a href="#">热词搜索</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">风险监测</a></li>
+            <li><a href="#">销售联盟</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">广告营销</a></li>
+        </ul>
+        <!--第二行-->
+        <p>本公司游戏产品适合18岁以上成年人使用&nbsp;违法和不良信息举报电话：<a href="" style="text-decoration: underline; ">021-60766055</a> 互联网药品信息服务资格证编号（京）-经营性-2018-0025</p>
+        <p>网络食品销售第三方平台提供者备案：沪网食备A0015号  网络文化经营许可证沪网文[2017]5537-436号  增值电信业务经营许可证</p>
+        <p>国美在线电子商务有限公司  办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区  客服电话:4008113333  经营证照  出版经营许可证</p>
+        <p>©2000-2018  国美在线电子商务有限公司版权所有  京公安网备11010502027062  沪ICP备11009419号  沪B2-20120004号</p>
+        <!--最底层图片-->
+        <div class="footer-img">
+            <img src="imgs/banquan1.jpg"/>
         </div>
     </div>
 </body>

@@ -1,0 +1,227 @@
+/*页面全体样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    display: inline-block;
+}
+/*注册头部*/
+.top{
+    width: 100%;
+    height: 120px;
+}
+/*注册头部-居中块*/
+.top-center{
+    width: 990px;
+    height: 120px;
+    margin: auto;
+    /*background-color: #5A68F8;*/
+}
+/*居中块头部*/
+.top-top{
+    width: 400px;
+    height: 60px;
+    padding-top: 30px;
+}
+/*居中块头部图片*/
+.top-top img{
+    width: 170px;
+    height: 60px;
+    float: left;
+}
+/*居中块文字*/
+.top-top #p01{
+    font-size: 40px;
+    color: #BCBCBC;
+    display: inline-block;
+    float: left;
+}
+/*注册分类块*/
+.enroll-ct{
+    width: 990px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    /*background-color: #5A68F8;*/
+}
+/*个人模块*/
+#person,#company{
+    width: 150px;
+    height: 40px;
+    color: #5e5e5e;
+    background-color:#f3f3f3 ;
+    float: left;
+    font-size: 16px;
+}
+/*个人模式*/
+#person{
+    margin-left: 140px;
+}
+/*个人模块实时样式*/
+#person:hover{
+    color: red;
+    border-top: 2px solid red;
+
+}
+/*公司模块实时样式*/
+#company:hover{
+    color: red;
+    border-top:2px solid red;
+}
+/*个人，公司文字样式*/
+#person p{
+    text-align: center;
+    margin-top: 8px;
+}
+#company p{
+    text-align: center;
+    margin-top: 8px;
+}
+/*右侧文字模块*/
+#p02{
+    font-size: 16px;
+    float: right;
+    margin-top:20px ;
+    margin-right: 10px;
+}
+/*注册主体*/
+.enroll-body{
+    width: 100%;
+    height: 640px;
+    margin-top: 2px;
+    /*background-color: #BCBCBC;*/
+}
+/*注册主体居中块*/
+.body-center{
+    width: 990px;
+    height: 640px;
+    margin: auto;
+    /*background-color: #5A68F8;*/
+    border:1px solid rgba(243,243,243,0.8);
+}
+/*注册表*/
+.list-text{
+    width: 600px;
+    height: 100%;
+    font-size: 20px;
+    color: #888888;
+    border: 1px solid white;
+    float: left;
+}
+/*注册表左侧外框*/
+.first-list{
+    width: 100%;
+    height: 110px;
+    margin-top: 2px;
+
+
+}
+.first-list p{
+    margin-left: 60px;
+    margin-top: 60px;
+    float: left;
+}
+.first-list-inp{
+    float: left;
+    width: 300px;
+    height: 20px;
+    margin-top: 60px;
+}
+.air{
+    width: 1px;
+    height: 1px;
+}
+.secound-list{
+    width: 600px;
+    height: 60px;
+    margin-top: 2px;
+}
+.secound-list p{
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+}
+.secound-list-inp{
+    float: left;
+    width: 300px;
+    height: 20px;
+    margin-top:20px;
+}
+/*滑块样式*/
+/*input[type=range]{*/
+/*width: 300px;*/
+/*!*这个属性设置使填充进度条时的图形为圆角*!*/
+/*border-radius: 10px;*/
+/*}*/
+/*input[type=range]::*/
+.list-ss p{
+    margin-left: 10px;
+    float: left;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.list-ss input{
+    float: left;
+}
+/*立即注册按钮*/
+button{
+    width: 260px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    margin-left: 200px ;
+    margin-top: 80px;
+}
+/*注册表右侧*/
+#list-right{
+    width: 378px;
+    height: 328px;
+    float: left;
+}
+/*底部*/
+.footer{
+    width: 990px;
+    height: 230px;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+}
+.footer a{
+    color: #a5a5a5;
+    font-size: 14px;
+}
+ul>li{
+    margin-left: 4px;
+}
+#first-ul{
+    margin-top: 6px;
+}
+#first-li{
+    margin-left: 60px;
+}
+.footer p{
+    color: #a5a5a5;
+    font-size: 14px;
+    padding-left: 60px;
+    margin-top: 4px;
+}
+.footer p a{
+    color: #5A68F8;
+}
+/*底层图片*/
+.footer-img{
+    width: 990px;
+    height: 62px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.footer-img img{
+    width: 990px;
+    height: 62px;
+
+}
