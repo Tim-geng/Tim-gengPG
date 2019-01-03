@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机详细信息页面</title>
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <!--自己的样式-->
+    <style>
+        /*居中三张图片*/
+        .three{
+            width: 1200px;
+            height: 120px;
+            margin: auto;
+        }
+        /*黑色横栏条*/
+        .black{
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+        }
+        /*黑色横栏条-居中模块*/
+        .black-center{
+            width: 1200px;
+            height: 100%;
+            margin: auto;
+            color: white;
+            font-size: 18px;
+            word-spacing: 20px;
+            line-height: 40px;
+        }
+        /*灰色横栏条*/
+        .gray{
+            width: 100%;
+            height: 42px;
+            background-color: #f6f6f6;
+        }
+        /*灰色横栏条-居中模块*/
+        .gray-center{
+            width: 1200px;
+            height: 100%;
+            margin: auto;
+            line-height: 42px;
+        }
+        /*右侧文字*/
+        .center-right{
+            float: right;
+            word-spacing: 16px;
+        }
+        /*主体手机块*/
+        .phone-main{
+            width: 100%;
+            height: 800px;
+            margin-top: 20px;
+        }
+        /*居中块*/
+        .phone-center{
+            width: 1200px;
+            height: 800px;
+            margin: auto;
+        }
+        /*左侧*/
+        .center-left{
+            width: 450px;
+            height: 800px;
+            float: left;
+        }
+        /*左侧手机图片*/
+        .phone-left{
+            width: 450px;
+            height: 450px;
+        }
+        .phone-left img{
+            width: 450px;
+            height: 450px;
+            border: 1px solid #5e5e5e;
+        }
+        /*手机图第二行*/
+        .phone-left2{
+            width: 450px;
+            height: 100px;
+            margin-top: 20px;
+        }
+        .phone-left2 img{
+            width: 100px;
+            height: 100px;
+            margin-left: 5px;
+        }
+        /*手机图第三行*/
+        .phone-left3{
+            width: 450px;
+            height: 20px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .left3-left{
+            float: left;
+        }
+        .left3-right{
+            float: right;
+            word-spacing: 4px;
+        }
+        /*右侧*/
+        .center-right2{
+            margin-top: 20px;
+            width: 610px;
+            height: 800px;
+            float: right;
+        }
+        /*价格*/
+        .price{
+            width: 610px;
+            height: 60px;
+            background-color: #BCBCBC;
+            /*text-align: center;*/
+            line-height: 60px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<!--首页顶部-->
+<div class="top">
+    <!--首页广告行-->
+    <div class="top-ad">
+        <img src="imgs/国美广告.jpg"/>
+    </div>
+</div>
+
+<!--首页导航标签-->
+<div class="nav-title">
+    <!--首页导航居中块-->
+    <div class="nav-center">
+        <!--首页导航居中块左侧-->
+        <span class="nav-center-left">
+                <span><a href="">国美会员</a></span>
+                <span><a href="">登录</a></span>
+                <span id="nav-center-left-sp"><a href="">注册有礼</a></span>
+            </span>
+        <!--首页导航居中右侧-->
+        <span class="nav-center-right">
+                <span><a href="">我的订单</a></span>
+                <span><a href="">我的国美</a></span>
+                <span><a href="">企业采购</a></span>
+                <span><a href="">服务中心</a></span>
+                <span><a href="">网站导航</a></span>
+                <span><a href="">手机国美</a></span>
+            </span>
+    </div>
+</div>
+
+<!--首页搜索区域-->
+<div class="seek">
+    <!--搜索区域居中-->
+    <div class="seek-center">
+        <!--国美图标-->
+        <div class="logo">
+            <img src="imgs/logo01.jpg"/>
+        </div>
+        <!--中间搜索框-->
+        <div class="seek-inp-center">
+            <!--搜索框上部-->
+            <div class="seek-inp-center-tree">
+                <!--下拉菜单-->
+                <select name="" id="select04">
+                    <option value="商品">商品</option>
+                    <option value="店铺">店铺</option>
+                    <option value="话题">话题</option>
+                    <option value="圈子">圈子</option>
+                </select>
+                <!--搜索输入框-->
+                <input type="text" value="空调" id="inp01">
+                <!--按钮-->
+                <input type="button" value="搜索" id="inp02">
+            </div>
+            <!--搜索文本标签-->
+            <div class="text-title">
+                <span><a href="">32周年庆</a></span>
+                <span><a href="">优惠购金</a></span>
+                <span><a href="">空调减600</a></span>
+                <span><a href="">低至9.9</a></span>
+                <span><a href="">最高减2000</a></span>
+                <span><a href="">品质轮胎</a></span>
+                <span><a href="">小米平板</a></span>
+                <span><a href="">晒单赠包</a></span>
+            </div>
+        </div>
+        <!--中间搜索区域右侧-->
+        <div class="seek-right">
+            <!--购物车图标-->
+            <a href="#">我的购物车</a>
+        </div>
+    </div>
+</div>
+<!--三张图片-->
+<div class="three">
+    <img src="imgs/three.jpg" height="120" width="1200"/>
+</div>
+<!--黑色横栏条-->
+<div class="black">
+    <!--黑色横栏条居中-->
+    <div class="black-center">
+        <span style="margin-left: 10px">首页</span>
+        <span>Mate系列</span>
+        <span>P系列</span>
+        <span>nove系列</span>
+        <span>畅想系列</span>
+        <span>平板/笔记本</span>
+    </div>
+</div>
+<!--灰色横栏条-->
+<div class="gray">
+    <!--灰色横栏条居中模块-->
+    <div class="gray-center">
+        <span>手机&nbsp;&gt;</span>
+        <span>手机通讯&nbsp;&gt;</span>
+        <span>手机&nbsp;&gt;</span>
+        <span>华为(HUAWEI)&nbsp;&gt;</span>
+        <span>华为手机Mate20</span>
+        <div class="center-right">
+            <span>华为官方品牌旗舰店</span>
+            <span style="background-color: red;color: white">国美自营</span>
+            <span>联系供应商</span>
+            <span>收藏店铺</span>
+        </div>
+    </div>
+</div>
+
+<!--主体手机块-->
+<div class="phone-main">
+    <!--居中块-->
+    <div class="phone-center">
+        <!--左侧-->
+        <div class="center-left">
+            <!--左侧手机图-->
+            <div class="phone-left">
+                <img src="imgs/phone01.jpg" />
+            </div>
+            <!--手机图第二行-->
+            <div class="phone-left2">
+                <img src="imgs/phone05.jpg"/>
+                <img src="imgs/phone05.jpg"/>
+                <img src="imgs/phone05.jpg"/>
+                <img src="imgs/phone05.jpg"/>
+            </div>
+            <!--手机图第三行-->
+            <div class="phone-left3">
+                <span class="left3-left">商品编号：100488648</span>
+                <div class="left3-right">
+                    <span>分享</span>
+                    <span>提心愿</span>
+                    <span>收藏</span>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="center-right2">
+            <h4>华为手机Mate20(HMA-AL00) 6GB+64GB 麒麟980芯片全面屏超微距影像 移动联通电信 双卡双待 翡冷翠</h4>
+            <div style="height: 10px;"></div>
+            <span style="font-size: 14px"><span style="color: red">【7nm麒麟980智能芯片，大广角徕卡三摄，高屏占比，长续航】</span>更多华为旗舰 <span style="color: red">【转盘抽奖赢 5折购iPhone XS】</span> 点击参与</span>
+            <!--价格-->
+            <div class="price">
+                <span style="margin-left: 20px">国美价：<span style="color: red;font-size: 20px">￥3999.00</span>  <span style="margin-left: 10px;color: #5A68F8;font-size: 14px">降价通知</span></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--底部版权区-->
+<div class="footer">
+    <!--第一行-->
+    <ul id="first-ul">
+        <li id="first-li"><a href="#">国美集团</a></li>
+        <li><a href="#">国美管家</a></li>
+        <li><a href="#">关于国美</a></li>
+        <li><a href="#">加入我们</a></li>
+        <li><a href="#">品牌大全</a></li>
+        <li><a href="#">商品专题</a></li>
+        <li><a href="#">商品词</a></li>
+        <li><a href="#">热词搜索</a></li>
+        <li><a href="#">友情链接</a></li>
+        <li><a href="#">风险监测</a></li>
+        <li><a href="#">销售联盟</a></li>
+        <li><a href="#">商家入驻</a></li>
+        <li><a href="#">广告营销</a></li>
+    </ul>
+    <!--第二行-->
+    <p>本公司游戏产品适合18岁以上成年人使用&nbsp;违法和不良信息举报电话：<a href="">021-60766055</a> 互联网药品信息服务资格证编号（京）-经营性-2018-0025</p>
+    <p>网络食品销售第三方平台提供者备案：沪网食备A0015号  网络文化经营许可证沪网文[2017]5537-436号  增值电信业务经营许可证</p>
+    <p>国美在线电子商务有限公司  办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区  客服电话:4008113333  经营证照  出版经营许可证</p>
+    <p>©2000-2018  国美在线电子商务有限公司版权所有  京公安网备11010502027062  沪ICP备11009419号  沪B2-20120004号</p>
+    <!--最底层图片-->
+    <div class="footer-img">
+        <img src="imgs/banquan1.jpg"/>
+    </div>
+</div>
+</body>
+</html>
